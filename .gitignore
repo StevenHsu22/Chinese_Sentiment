@@ -1,0 +1,44 @@
+#
+# Visual Studio Code
+#
+.settings/
+.classpath
+.project
+.vscode/
+
+# Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.DS_Store
+.git/
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+# *.ipynb
+*.log
+kenlm.egg-info
+build/*
+web/app/utils/*.json
+*.code-workspace
+
+# nas
+@eaDir
+*.DS_Store
+
+# data
+chinese-roberta-wwm-ext-l12-h768-a12/*
+!chinese-roberta-wwm-ext-l12-h768-a12/place_model_here_for_inference.txt
+
+output_predict/*
+!output_predict/result_here.txt
+
+test.py
