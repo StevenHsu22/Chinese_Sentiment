@@ -5,13 +5,15 @@ Chinese Sentiment Analysis Model (Three-class Classification)
 ---
 
 ## Table of Contents
-1. [Model Purpose](#model-purpose)  
-2. [References](#references)  
-3. [Training Dataset](#training-dataset)  
-4. [Training Process](#training-process)  
-5. [Results](#results)  
-6. [Usage](#usage)  
-7. [Citation](#citation)
+1. [Model Purpose](#model-purpose)
+2. [References](#references)
+3. [Training Dataset](#training-dataset)
+4. [Training Process](#training-process)
+5. [Results](#results)
+6. [General usage](#general-usage)
+7. [Simple docker usage](#simple-docker-usage)
+8. [Todo](#todo)
+9. [Citation](#citation)
 
 ---
 
@@ -63,7 +65,9 @@ Data example:
 
 ---
 
-## Training Process (kaggle env)
+## Training Process
+
+Environment : [kaggle platform](https://www.kaggle.com/)
 
 1. Download base model : [RoBERTa-wwm-ext, Chinese](https://drive.google.com/open?id=1jMAKIJmPn7kADgD3yQZhpsqM-IRM1qZt)
 2. Use the Kaggle platform for training (*if the dataset is too large, it may exceed Kaggle's maximum execution time limit, making training impossible).  
@@ -90,10 +94,10 @@ Data example:
 
 ---
 
-## general usage (local env)
+## General usage
 [Trained model](https://huggingface.co/stevenhsu123/sentiment_test)
 
-- Environment : Python 3.8.16, macOS 14.6.1
+- Environment (local) : Python 3.8.16, macOS 14.6.1
 
 1. **Install dependencies:**  
    ```bash
@@ -114,7 +118,7 @@ Data example:
    - output format : tsv 
    - Example output : 0.04118731(negative)  0.9210373(neutral)  0.037775367(positive)
  
-## simple docker usage
+## Simple docker usage
 
 1. **Install docker images:**  
    ```bash
